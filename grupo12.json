@@ -1,0 +1,27 @@
+{
+  "idEmpleado": 1,
+  "nombre": "Pablo212",
+  "apellido": "Garcia",
+  "dni": "39373690",
+  "idDomicilio": 1,
+  "idObraSocial": 1
+}{
+  "idCliente": 1,
+  "nombre": "Agustin",
+  "apellido": "Corno",
+  "dni": "38383838",
+  "idDomicilio": 333,
+  "idObraSocial": 2
+}{
+  "idObraSocial": 1,
+  "nombre": "Swiss Medical",
+  "nroAfiliado": 1000
+}{
+  "idLaboratorio": 1,
+  "nombre": "Skarsgard"
+}{
+  "idProducto": 1,
+  "descripcion": "Paracetamol",
+  "precio": 2000.0,
+  "idLaboratorio": 1
+}
