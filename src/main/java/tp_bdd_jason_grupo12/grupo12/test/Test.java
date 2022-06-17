@@ -5,7 +5,9 @@ import com.mongodb.DBCursor;
 
 import tp_bdd_jason_grupo12.grupo12.Cliente;
 import tp_bdd_jason_grupo12.grupo12.Domicilio;
+import tp_bdd_jason_grupo12.grupo12.Empleado;
 import tp_bdd_jason_grupo12.grupo12.Obrasocial;
+import tp_bdd_jason_grupo12.grupo12.Sucursal;
 import tp_bdd_jason_grupo12.grupo12.dao.MongoDBConection;
 
 public class Test {
@@ -26,13 +28,10 @@ public class Test {
 		o.setNombre("GALENO");
 		o.setNroAfiliado(101012);
 		//Cliente
-		Cliente cliente = new Cliente();
-		cliente.setApellido("Medina");
-		cliente.setNombre("Renata");
-		cliente.setDni("59261061");
-		cliente.setIdCliente(3);
-		cliente.setDomicilio(d);
-		cliente.setObraSocial(o);
+		Empleado emp = new Empleado(1, "Cristian", "Medina", "38549121", d, o);
+		Empleado emp2 = new Empleado(1, "Micaela", "Perez", "40186614", d, o);
+		Empleado emp3 = new Empleado(1, "Renata", "Medina", "59271616", d, o);
+		
 		//dbmon.altaCliente("clientes", cliente);
 		
 		DBCursor cur = col.find();
@@ -41,4 +40,6 @@ public class Test {
 			//System.out.println(cur.next().toString());
 		}
 	}
+	
+//	Sucursal s1 = new Sucursal(1, d, empleados, ventas);
 }

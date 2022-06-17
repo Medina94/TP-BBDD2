@@ -7,16 +7,14 @@ public class Producto {
 	private String descripcion;
 	private double precio;
 	private Laboratorio laboratorio;
-	//*******************
-	private int idLaboratorio;
 	
 	//constructor
-	public Producto(int idProducto, String descripcion, double precio, int idLaboratorio) {
+	public Producto(int idProducto, String descripcion, double precio, Laboratorio laboratorio) {
 		super();
 		this.idProducto = idProducto;
 		this.descripcion = descripcion;
 		this.precio = precio;
-		this.idLaboratorio = idLaboratorio;
+		this.laboratorio = laboratorio;
 	}
 	
 	public Producto() {
@@ -42,13 +40,13 @@ public class Producto {
 	public void setPrecio(double precio) {
 		this.precio = precio;
 	}
-	public int getIdLaboratorio() {
-		return idLaboratorio;
+
+	public Laboratorio getLaboratorio() {
+		return laboratorio;
 	}
-	public void setIdLaboratorio(int idLaboratorio) {
-		this.idLaboratorio = idLaboratorio;
+
+	public void setLaboratorio(Laboratorio laboratorio) {
+		this.laboratorio = laboratorio;
 	}
-	
-	
 
 }

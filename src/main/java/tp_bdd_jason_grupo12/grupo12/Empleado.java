@@ -7,18 +7,18 @@ public class Empleado {
 	private String nombre;
 	private String apellido;
 	private String dni;
-	private int idDomicilio;
-	private int idObraSocial;
+	private Domicilio domicilio;
+	private	Obrasocial obraSocial;
 	
 	//constructor
-	public Empleado(int idEmpleado, String nombre, String apellido, String dni, int idDomicilio, int idObraSocial) {
+	public Empleado(int idEmpleado, String nombre, String apellido, String dni, Domicilio domicilio, Obrasocial obraSocial) {
 		super();
 		this.idEmpleado = idEmpleado;
 		this.nombre = nombre;
 		this.apellido = apellido;
 		this.dni = dni;
-		this.idDomicilio = idDomicilio;
-		this.idObraSocial = idObraSocial;
+		this.domicilio = domicilio;
+		this.obraSocial = obraSocial;
 	}
 	
 	public Empleado() {
@@ -57,22 +57,21 @@ public class Empleado {
 	public void setDni(String dni) {
 		this.dni = dni;
 	}
-
-	public int getIdDomicilio() {
-		return idDomicilio;
+	
+	public Domicilio getDomicilio() {
+		return domicilio;
 	}
 
-	public void setIdDomicilio(int idDomicilio) {
-		this.idDomicilio = idDomicilio;
+	public void setDomicilio(Domicilio domicilio) {
+		this.domicilio = domicilio;
 	}
 
-	public int getIdObraSocial() {
-		return idObraSocial;
+	public Obrasocial getObraSocial() {
+		return obraSocial;
 	}
 
-	public void setIdObraSocial(int idObraSocial) {
-		this.idObraSocial = idObraSocial;
+	public void setObraSocial(Obrasocial obraSocial) {
+		this.obraSocial = obraSocial;
 	}
 	
-
 }

@@ -1,5 +1,6 @@
 package tp_bdd_jason_grupo12.grupo12;
 
+import java.util.ArrayList;
 import java.util.List;
 
 public class Sucursal {
@@ -7,19 +8,16 @@ public class Sucursal {
 	//atributos
 	private int idSucursal;
 	private Domicilio domicilio;
-	private List<Empleado> empleados;
-	private List<Venta> ventas;
-	
-	//*********************
-	private int idDomicilio;
-	private int idEmpleado;
+	private List<Empleado> empleados = new ArrayList<>();
+	private List<Venta> ventas = new ArrayList<>();
 	
 	//constructor
-	public Sucursal(int idSucursal, int idDomicilio, int idEmpleado) {
+	public Sucursal(int idSucursal, Domicilio domicilio, List<Empleado> empleados, List<Venta> ventas) {
 		super();
 		this.idSucursal = idSucursal;
-		this.idDomicilio = idDomicilio;
-		this.idEmpleado = idEmpleado;
+		this.domicilio = domicilio;
+		this.empleados = empleados;
+		this.ventas = ventas;
 	}
 	
 	public Sucursal() {
@@ -33,19 +31,30 @@ public class Sucursal {
 	public void setIdSucursal(int idSucursal) {
 		this.idSucursal = idSucursal;
 	}
-	public int getIdDomicilio() {
-		return idDomicilio;
+
+	public Domicilio getDomicilio() {
+		return domicilio;
 	}
-	public void setIdDomicilio(int idDomicilio) {
-		this.idDomicilio = idDomicilio;
+
+	public void setDomicilio(Domicilio domicilio) {
+		this.domicilio = domicilio;
 	}
-	public int getIdEmpleado() {
-		return idEmpleado;
+
+	public List<Empleado> getEmpleados() {
+		return empleados;
 	}
-	public void setIdEmpleado(int idEmpleado) {
-		this.idEmpleado = idEmpleado;
+
+	public void setEmpleados(List<Empleado> empleados) {
+		this.empleados = empleados;
 	}
-	
+
+	public List<Venta> getVentas() {
+		return ventas;
+	}
+
+	public void setVentas(List<Venta> ventas) {
+		this.ventas = ventas;
+	}
 	
 
 }

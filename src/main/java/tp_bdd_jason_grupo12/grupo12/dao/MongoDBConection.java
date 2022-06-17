@@ -6,7 +6,6 @@ import com.mongodb.BasicDBObject;
 import com.mongodb.DB;
 import com.mongodb.DBCollection;
 import com.mongodb.MongoClient;
-import com.mongodb.util.JSON;
 
 import tp_bdd_jason_grupo12.grupo12.Cliente;
 
